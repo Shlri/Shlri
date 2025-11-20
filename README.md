@@ -20,4 +20,4 @@
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/shiri_w)
 [![Telegram Channel](https://img.shields.io/badge/-Telegram_Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/shiri_ch)
 [![Steam](https://img.shields.io/badge/-Steam-000000?style=flat-square&logo=steam&logoColor=white)](https://steamcommunity.com/id/__Shiri/)
-[![Website](https://img.shields.io/badge/-Website-000000?style=flat-square&logo=About.me&logoColor=white)](https://your-website.com)
+[![Website](https://img.shields.io/badge/-Website-000000?style=flat-square&logo=About.me&logoColor=white)](https://shlri.github.io/Shlri/)
