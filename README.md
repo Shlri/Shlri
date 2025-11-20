@@ -1,5 +1,4 @@
-<h1 align="center">♰ Hi! I'm [S-h-i-r-i](https://your-website.com) ♰</h1>
-<br>
+# ♰ Hi! I'm [S-h-i-r-i](https://your-website.com) ♰
 
 [paws](/assets/kittypaws.gif)
 
