@@ -1,4 +1,4 @@
-# ♰ Hi! I'm [S-h-i-r-i](https://your-website.com) ♰
+<h1 align="center"> ♰ Hi! I'm <a href="https://shlri.github.io/Shlri/" target="_blank">S-h-i-r-i</a> ♰ </h1>
 
 <div float="left" align="center">
     <img src="/assets/kittypaws.gif"/>
@@ -8,7 +8,7 @@
 ✨ **About me:**
 - 💻 Programer, Artist
 - 🎨 Creating *things* on the internet
-- 🌐 [My website](https://your-website.com)
+- 🌐 [My website](https://shlri.github.io/Shlri/)
 
 ---
 
