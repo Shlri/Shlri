@@ -1,6 +1,9 @@
 # ♰ Hi! I'm [S-h-i-r-i](https://your-website.com) ♰
 
-[paws](/assets/kittypaws.gif)
+<div float="left" align="center">
+    <img src="/assets/kittypaws.gif"/>
+    <br>
+</div>
 
 ✨ **About me:**
 - 💻 Programer, Artist
