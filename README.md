@@ -5,11 +5,11 @@
     <br>
 </div>
 
-✨ **About me:**
-■ 💻 Programer, Artist
-■ 🌹 Slvt :3
-■ 🎨 Creating *things* on the internet
-■ 🌐 [My website](https://shlri.github.io/Shlri/)
+✨ **About me:**<br>
+■ 💻 Programer, Artist<br>
+■ 🌹 Slvt :3<br>
+■ 🎨 Creating *sillest things* on the internet<br>
+■ 🌐 [My website](https://shlri.github.io/Shlri/)<br>
 
 ---
 
