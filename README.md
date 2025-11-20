@@ -6,9 +6,10 @@
 </div>
 
 ✨ **About me:**
-- 💻 Programer, Artist
-- 🎨 Creating *things* on the internet
-- 🌐 [My website](https://shlri.github.io/Shlri/)
+■ 💻 Programer, Artist
+■ 🌹 Slvt :3
+■ 🎨 Creating *things* on the internet
+■ 🌐 [My website](https://shlri.github.io/Shlri/)
 
 ---
 
