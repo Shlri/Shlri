@@ -16,7 +16,7 @@
 ### 📫 My Links:
 <div align="center">
 
-<a href="https://twitch.tv/MepTBoe_TeJlo" target="_blank">
+<a href="https://twitch.tv/MepTBoe_TeJlo" target="_blank">Twitch
   <img src="/assets/twitch.svg" width="48" height="48" style="margin:8px; border-radius:12px;" alt="Twitch"/>
 </a>
 
@@ -29,7 +29,7 @@
 </a>
 
 <a href="https://t.me/shiri_ch" target="_blank">
-  <img src="/assets/telegram.svg" width="48" height="48" style="margin:8px; border-radius:12px;" alt="Telegram чат"/>
+  <img src="/assets/telegram.svg" width="48" height="48" style="margin:8px; border-radius:12px;" alt="Telegram Channel"/>
 </a>
 
 <a href="https://steamcommunity.com/id/__Shiri/" target="_blank">
@@ -37,7 +37,7 @@
 </a>
 
 <a href="https://shlri.github.io/Shlri/" target="_blank">
-  <img src="/assets/globe.png" width="48" height="48" style="margin:8px; border-radius:12px;" alt="Сайт"/>
+  <img src="/assets/globe.png" width="48" height="48" style="margin:8px; border-radius:12px;" alt="Site"/>
 </a>
 
 </div>
