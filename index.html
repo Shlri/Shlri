@@ -3,220 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiri's</title>
+    <title>♡ Shiri</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Gothic decorations -->
-    <div class="gothic-bg">
-        <div class="cross cross-1">✟</div>
-        <div class="cross cross-2">✟</div>
-        <div class="cross cross-3">✟</div>
-        <div class="cross cross-4">✟</div>
-        <div class="chains"></div>d
+    <div class="background">
+        <div class="stars" id="stars"></div>
+        <div class="floating-symbols" id="floatingSymbols"></div>
     </div>
-
-    <!-- BSP Layout Container -->
-    <div class="bsp-container">
-        <!-- Main profile window -->
-        <div class="window" data-window="main">
-            <div class="window-header">
-                <span class="window-icon">✟</span>
-                <span class="window-title">shiri_w.soul</span>
-                <div class="window-controls">
-                    <span class="control">_</span>
-                    <span class="control">□</span>
-                    <span class="control">✕</span>
-                </div>
+    
+    <div class="dock" id="dock">
+        <div class="dock-header">☰ windows</div>
+        <div class="dock-items">
+            <div class="dock-item active" data-window="profile">
+                <span class="dock-icon">☠</span>
+                <span class="dock-label">profile</span>
             </div>
-            <div class="window-content">
-                <div class="avatar-box">
-                    <div class="avatar">
-                        <span class="avatar-icon">👤</span>
-                    </div>
-                    <div class="avatar-glow"></div>
-                </div>
-                <div class="info">
-                    <h1 class="username">shiri_w</h1>
-                    <div class="bio">
-                        <p>✦ developer</p>
-                        <p>✦ streamer</p>
-                        <p>✦ creator</p>
-                    </div>
-                </div>
+            <div class="dock-item active" data-window="links">
+                <span class="dock-icon">⛓</span>
+                <span class="dock-label">links</span>
+            </div>
+            <div class="dock-item active" data-window="interests">
+                <span class="dock-icon">✝</span>
+                <span class="dock-label">interests</span>
+            </div>
+            <div class="dock-item active" data-window="about">
+                <span class="dock-icon">⚰</span>
+                <span class="dock-label">about</span>
             </div>
         </div>
-
-        <!-- Links windows -->
-        <div class="window" data-window="social1">
-            <div class="window-header">
-                <span class="window-icon">📺</span>
-                <span class="window-title">twitch</span>
-                <div class="window-controls">
-                    <span class="control">_</span>
-                    <span class="control">□</span>
-                    <span class="control">✕</span>
-                </div>
-            </div>
-            <div class="window-content clickable" data-link="https://www.twitch.tv/MepTBoe_TeJlo">
-                <div class="link-info">
-                    <div class="link-icon">📺</div>
-                    <div class="link-text">
-                        <div class="link-title">twitch.tv</div>
-                        <div class="link-sub">watch live streams</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="window" data-window="social2">
-            <div class="window-header">
-                <span class="window-icon">🎬</span>
-                <span class="window-title">youtube</span>
-                <div class="window-controls">
-                    <span class="control">_</span>
-                    <span class="control">□</span>
-                    <span class="control">✕</span>
-                </div>
-            </div>
-            <div class="window-content clickable" data-link="https://youtube.com/@shiri_w">
-                <div class="link-info">
-                    <div class="link-icon">🎬</div>
-                    <div class="link-text">
-                        <div class="link-title">youtube</div>
-                        <div class="link-sub">video content</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="window" data-window="social3">
-            <div class="window-header">
-                <span class="window-icon">💬</span>
-                <span class="window-title">telegram</span>
-                <div class="window-controls">
-                    <span class="control">_</span>
-                    <span class="control">□</span>
-                    <span class="control">✕</span>
-                </div>
-            </div>
-            <div class="window-content clickable" data-link="https://t.me/shiri_w">
-                <div class="link-info">
-                    <div class="link-icon">💬</div>
-                    <div class="link-text">
-                        <div class="link-title">telegram</div>
-                        <div class="link-sub">direct messages</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="window" data-window="social4">
-            <div class="window-header">
-                <span class="window-icon">📢</span>
-                <span class="window-title">channel</span>
-                <div class="window-controls">
-                    <span class="control">_</span>
-                    <span class="control">□</span>
-                    <span class="control">✕</span>
-                </div>
-            </div>
-            <div class="window-content clickable" data-link="https://t.me/shiri_ch">
-                <div class="link-info">
-                    <div class="link-icon">📢</div>
-                    <div class="link-text">
-                        <div class="link-title">tg channel</div>
-                        <div class="link-sub">updates & news</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="window" data-window="social5">
-            <div class="window-header">
-                <span class="window-icon">🎮</span>
-                <span class="window-title">steam</span>
-                <div class="window-controls">
-                    <span class="control">_</span>
-                    <span class="control">□</span>
-                    <span class="control">✕</span>
-                </div>
-            </div>
-            <div class="window-content clickable" data-link="https://steamcommunity.com/id/__Shiri/">
-                <div class="link-info">
-                    <div class="link-icon">🎮</div>
-                    <div class="link-text">
-                        <div class="link-title">steam</div>
-                        <div class="link-sub">gaming profile</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="window" data-window="social6">
-            <div class="window-header">
-                <span class="window-icon">💻</span>
-                <span class="window-title">github</span>
-                <div class="window-controls">
-                    <span class="control">_</span>
-                    <span class="control">□</span>
-                    <span class="control">✕</span>
-                </div>
-            </div>
-            <div class="window-content clickable" data-link="https://github.com/your_username">
-                <div class="link-info">
-                    <div class="link-icon">💻</div>
-                    <div class="link-text">
-                        <div class="link-title">github</div>
-                        <div class="link-sub">code & projects</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Info windows -->
-        <div class="window" data-window="likes">
-            <div class="window-header">
-                <span class="window-icon">♡</span>
-                <span class="window-title">likes.txt</span>
-                <div class="window-controls">
-                    <span class="control">_</span>
-                    <span class="control">□</span>
-                    <span class="control">✕</span>
-                </div>
-            </div>
-            <div class="window-content">
-                <div class="list">
-                    <div class="list-item">♡ coding</div>
-                    <div class="list-item">♡ gaming</div>
-                    <div class="list-item">♡ pixel art</div>
-                    <div class="list-item">♡ streaming</div>
-                    <div class="list-item">♡ music</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="window" data-window="dislikes">
-            <div class="window-header">
-                <span class="window-icon">✗</span>
-                <span class="window-title">dislikes.txt</span>
-                <div class="window-controls">
-                    <span class="control">_</span>
-                    <span class="control">□</span>
-                    <span class="control">✕</span>
-                </div>
-            </div>
-            <div class="window-content">
-                <div class="list">
-                    <div class="list-item">✗ bugs</div>
-                    <div class="list-item">✗ lag</div>
-                    <div class="list-item">✗ toxicity</div>
-                    <div class="list-item">✗ drama</div>
-                    <div class="list-item">✗ bad code</div>
-                </div>
-            </div>
+        <div class="dock-footer">
+            <div class="status-indicator"></div>
+            <span>online</span>
         </div>
     </div>
+    
+    <div class="windows-container" id="windowsContainer"></div>
 
     <script src="script.js"></script>
 </body>

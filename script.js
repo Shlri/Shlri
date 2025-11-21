@@ -1,105 +1,219 @@
-// Handle clickable links
-document.querySelectorAll('.clickable').forEach(el => {
-    el.addEventListener('click', function() {
-        const link = this.getAttribute('data-link');
-        if (link) {
-            window.open(link, '_blank');
+// Window configurations
+const windows = {
+    profile: {
+        icon: '☠',
+        title: 'profile.exe',
+        content: `
+            <div class="profile-grid">
+                <div class="avatar">👤</div>
+                <div class="profile-details">
+                    <div class="profile-name">shiri_w</div>
+                    <div class="profile-line">pixel artist</div>
+                    <div class="profile-line">developer</div>
+                    <div class="profile-line">streamer</div>
+                    <div class="profile-line">she/her</div>
+                    <div class="profile-line">age 19</div>
+                    <div class="profile-line">4'10</div>
+                </div>
+            </div>
+            <div class="corner-decoration top-right">⛧</div>
+            <div class="corner-decoration bottom-left">✝</div>
+        `
+    },
+    links: {
+        icon: '⛓',
+        title: 'links.dat',
+        content: `
+            <div class="links-grid">
+                <a href="https://www.twitch.tv/MepTBoe_TeJlo" target="_blank" class="link-card">
+                    <div class="link-icon">📺</div>
+                    <div class="link-label">twitch</div>
+                </a>
+                <a href="https://youtube.com/@shiri_w" target="_blank" class="link-card">
+                    <div class="link-icon">🎬</div>
+                    <div class="link-label">youtube</div>
+                </a>
+                <a href="https://t.me/shiri_w" target="_blank" class="link-card">
+                    <div class="link-icon">💬</div>
+                    <div class="link-label">telegram</div>
+                </a>
+                <a href="https://t.me/shiri_ch" target="_blank" class="link-card">
+                    <div class="link-icon">📢</div>
+                    <div class="link-label">channel</div>
+                </a>
+                <a href="https://steamcommunity.com/id/__Shiri/" target="_blank" class="link-card">
+                    <div class="link-icon">🎮</div>
+                    <div class="link-label">steam</div>
+                </a>
+                <a href="https://github.com/shlri" target="_blank" class="link-card">
+                    <div class="link-icon">💻</div>
+                    <div class="link-label">github</div>
+                </a>
+            </div>
+            <div class="corner-decoration top-left">☠</div>
+        `
+    },
+    interests: {
+        icon: '✝',
+        title: 'interests.txt',
+        content: `
+            <div class="lists-container">
+                <div class="list-section likes">
+                    <h3>♡ likes</h3>
+                    <div class="list-items">
+                        <div class="list-item">→ kitty cats</div>
+                        <div class="list-item">→ anime</div>
+                        <div class="list-item">→ games</div>
+                        <div class="list-item">→ <em>pron :3</em></div>
+                        <div class="list-item">→ pixel art</div>
+                        <div class="list-item">→ gothic</div>
+                    </div>
+                </div>
+                <div class="list-section dislikes">
+                    <h3>✗ dislikes</h3>
+                    <div class="list-items">
+                        <div class="list-item">→ loud noises</div>
+                        <div class="list-item">→ studing</div>
+                        <div class="list-item">→ <em>pron 3:</em></div>
+                        <div class="list-item">→ mornings</div>
+                    </div>
+                </div>
+            </div>
+            <div class="corner-decoration bottom-right">⛧</div>
+        `
+    },
+    about: {
+        icon: '⚰',
+        title: 'about.md',
+        content: `
+            <div class="about-sections">
+                <div class="about-block">
+                    <h4>i can do...</h4>
+                    <p>✦ montage<br>✦ collage<br>✦ <em>silly</em> pixel art<br>✦ <em>shitpost</em></p>
+                </div>
+                <div class="about-block">
+                    <h4>status</h4>
+                    <p>building <em>silly things</em> pixel by pixel</p>
+                </div>
+            </div>
+            <div class="corner-decoration top-right">🕸</div>
+            <div class="corner-decoration bottom-left">🦇</div>
+        `
+    }
+};
+
+// Initialize
+const container = document.getElementById('windowsContainer');
+const windowElements = {};
+let zIndexCounter = 10;
+
+// Window positions (вручную задай координаты)
+const positions = {
+    profile: { x: 160, y: 80, width: 400, height: 350 },
+    links: { x: 550, y: 350, width: 450, height: 400 },
+    interests: { x: 985, y: 120, width: 400, height: 450 },
+    about: { x: 175, y: 530, width: 400, height: 350 }
+};
+
+// Create windows
+Object.keys(windows).forEach((id, index) => {
+    const config = windows[id];
+    const pos = positions[id];
+    
+    const windowEl = document.createElement('div');
+    windowEl.className = 'window';
+    windowEl.dataset.windowId = id;
+    windowEl.style.animationDelay = (index * 0.1) + 's';
+    
+    // Set position and size
+    windowEl.style.left = pos.x + 'px';
+    windowEl.style.top = pos.y + 'px';
+    windowEl.style.width = pos.width + 'px';
+    windowEl.style.height = pos.height + 'px';
+    windowEl.style.zIndex = 10 + index;
+    
+    windowEl.innerHTML = `
+        <div class="window-header">
+            <div class="window-title">
+                <span class="window-icon">${config.icon}</span>
+                <span>${config.title}</span>
+            </div>
+            <div class="window-buttons">
+                <div class="window-btn" data-action="close"></div>
+            </div>
+        </div>
+        <div class="window-content">
+            ${config.content}
+        </div>
+    `;
+    
+    // Bring to front on hover
+    windowEl.addEventListener('mouseenter', () => {
+        bringToFront(windowEl);
+    });
+    
+    // Close handler
+    const closeBtn = windowEl.querySelector('[data-action="close"]');
+    closeBtn.addEventListener('click', () => toggleWindow(id));
+    
+    container.appendChild(windowEl);
+    windowElements[id] = windowEl;
+});
+
+function bringToFront(windowEl) {
+    zIndexCounter++;
+    windowEl.style.zIndex = zIndexCounter;
+    windowEl.classList.add('active');
+    
+    // Dim all other windows
+    Object.values(windowElements).forEach(el => {
+        if (el !== windowEl) {
+            el.classList.remove('active');
         }
+    });
+}
+
+function toggleWindow(windowId) {
+    const windowEl = windowElements[windowId];
+    const dockItem = document.querySelector(`[data-window="${windowId}"]`);
+    
+    if (windowEl.classList.contains('hidden')) {
+        windowEl.classList.remove('hidden');
+        dockItem.classList.add('active');
+    } else {
+        windowEl.classList.add('hidden');
+        dockItem.classList.remove('active');
+    }
+}
+
+// Dock handlers (оставь как есть)
+document.querySelectorAll('.dock-item').forEach(item => {
+    item.addEventListener('click', () => {
+        const windowId = item.dataset.window;
+        toggleWindow(windowId);
     });
 });
 
-// Window drag functionality (optional enhancement)
-let draggedWindow = null;
-let offsetX = 0;
-let offsetY = 0;
-
-document.querySelectorAll('.window-header').forEach(header => {
-    header.addEventListener('mousedown', startDrag);
-});
-
-function startDrag(e) {
-    if (e.target.classList.contains('control')) return;
-    
-    draggedWindow = e.target.closest('.window');
-    const rect = draggedWindow.getBoundingClientRect();
-    offsetX = e.clientX - rect.left;
-    offsetY = e.clientY - rect.top;
-    
-    draggedWindow.style.position = 'fixed';
-    draggedWindow.style.zIndex = '1000';
-    
-    document.addEventListener('mousemove', drag);
-    document.addEventListener('mouseup', stopDrag);
+// Create stars
+const starsContainer = document.getElementById('stars');
+for (let i = 0; i < 80; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.style.left = Math.random() * 100 + '%';
+    star.style.top = Math.random() * 100 + '%';
+    star.style.animationDelay = Math.random() * 3 + 's';
+    starsContainer.appendChild(star);
 }
 
-function drag(e) {
-    if (!draggedWindow) return;
-    
-    draggedWindow.style.left = (e.clientX - offsetX) + 'px';
-    draggedWindow.style.top = (e.clientY - offsetY) + 'px';
+// Create floating symbols
+const symbols = ['✝', '⛧', '♡', '☠', '⚰', '✦', '⛓'];
+const symbolsContainer = document.getElementById('floatingSymbols');
+for (let i = 0; i < 8; i++) {
+    const symbol = document.createElement('div');
+    symbol.className = 'float-symbol';
+    symbol.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    symbol.style.left = Math.random() * 100 + '%';
+    symbol.style.animationDelay = Math.random() * 20 + 's';
+    symbol.style.animationDuration = (15 + Math.random() * 10) + 's';
+    symbolsContainer.appendChild(symbol);
 }
-
-function stopDrag() {
-    document.removeEventListener('mousemove', drag);
-    document.removeEventListener('mouseup', stopDrag);
-    draggedWindow = null;
-}
-
-// Window controls functionality
-document.querySelectorAll('.control').forEach(control => {
-    control.addEventListener('click', function(e) {
-        e.stopPropagation();
-        const window = this.closest('.window');
-        const controlText = this.textContent;
-        
-        if (controlText === '✕') {
-            window.style.opacity = '0';
-            window.style.transform = 'scale(0.8)';
-            setTimeout(() => {
-                window.style.display = 'none';
-            }, 300);
-        } else if (controlText === '_') {
-            window.style.opacity = window.style.opacity === '0.3' ? '1' : '0.3';
-        }
-    });
-});
-
-// Subtle glitch effect on random window
-setInterval(() => {
-    const windows = document.querySelectorAll('.window');
-    const randomWindow = windows[Math.floor(Math.random() * windows.length)];
-    
-    if (randomWindow && Math.random() > 0.7) {
-        randomWindow.style.transform = 'translate(2px, 2px)';
-        setTimeout(() => {
-            randomWindow.style.transform = 'translate(0, 0)';
-        }, 100);
-    }
-}, 5000);
-
-// Add gothic cursor effect
-document.addEventListener('mousemove', (e) => {
-    if (Math.random() > 0.95) {
-        const cross = document.createElement('div');
-        cross.textContent = '✟';
-        cross.style.position = 'fixed';
-        cross.style.left = e.clientX + 'px';
-        cross.style.top = e.clientY + 'px';
-        cross.style.color = '#6b21a8';
-        cross.style.fontSize = '12px';
-        cross.style.pointerEvents = 'none';
-        cross.style.zIndex = '9999';
-        cross.style.opacity = '0.6';
-        document.body.appendChild(cross);
-        
-        setTimeout(() => {
-            cross.style.transition = 'all 1s';
-            cross.style.opacity = '0';
-            cross.style.transform = 'translateY(20px)';
-        }, 50);
-        
-        setTimeout(() => {
-            cross.remove();
-        }, 1050);
-    }
-});
