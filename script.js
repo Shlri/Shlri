@@ -2,7 +2,7 @@
 const windows = {
     profile: {
         icon: '☠',
-        title: 'profile.exe',
+        title: 'profile',
         content: `
             <div class="profile-grid">
                 <div class="avatar">👤</div>
@@ -22,7 +22,7 @@ const windows = {
     },
     links: {
         icon: '⛓',
-        title: 'links.dat',
+        title: 'links',
         content: `
             <div class="links-grid">
                 <a href="https://www.twitch.tv/MepTBoe_TeJlo" target="_blank" class="link-card">
@@ -55,13 +55,13 @@ const windows = {
     },
     interests: {
         icon: '✝',
-        title: 'interests.txt',
+        title: 'interests',
         content: `
             <div class="lists-container">
                 <div class="list-section likes">
                     <h3>♡ likes</h3>
                     <div class="list-items">
-                        <div class="list-item">→ kitty cats</div>
+                        <div class="list-item">→ kitty's</div>
                         <div class="list-item">→ anime</div>
                         <div class="list-item">→ games</div>
                         <div class="list-item">→ <em>pron :3</em></div>
@@ -84,7 +84,7 @@ const windows = {
     },
     about: {
         icon: '⚰',
-        title: 'about.md',
+        title: 'about',
         content: `
             <div class="about-sections">
                 <div class="about-block">
