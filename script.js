@@ -5,15 +5,12 @@ const windows = {
         title: 'profile.exe',
         content: `
             <div class="profile-grid">
-                <div class="avatar">👤</div>
+                <div class="avatar"><img src="/assets/kittypaws.gif" width="4%"></div>
                 <div class="profile-details">
-                    <div class="profile-name">shiri_w</div>
+                    <div class="profile-name">Shiri</div>
                     <div class="profile-line">pixel artist</div>
                     <div class="profile-line">developer</div>
                     <div class="profile-line">streamer</div>
-                    <div class="profile-line">she/her</div>
-                    <div class="profile-line">age 19</div>
-                    <div class="profile-line">4'10</div>
                 </div>
             </div>
             <div class="corner-decoration top-right">⛧</div>
