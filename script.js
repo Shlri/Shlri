@@ -5,7 +5,7 @@ const windows = {
         title: 'profile.exe',
         content: `
             <div class="profile-grid">
-                <div class="avatar"><img src="/assets/kittypaws.gif" width="4%"></div>
+                <div class="avatar">👤</div>
                 <div class="profile-details">
                     <div class="profile-name">Shiri</div>
                     <div class="profile-line">pixel artist</div>
