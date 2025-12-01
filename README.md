@@ -1,4 +1,4 @@
-<h1 align="center"> ♰ Hi! I'm <a href="https://shlri.github.io/Shlri/" target="_blank"><img src="https://readme-typing-svg.demolab.com?font=VT323&size=60&pause=500&color=C084FC&width=400&height=100&lines=Shiri"></a> ♰ </h1>
+<h1 align="center"> ♰ Hi! I'm <a href="https://shlri.github.io/Shlri/" target="_blank"><img src="https://readme-typing-svg.demolab.com?font=VT323&size=60&pause=500&color=C084FC&width=120&height=60&lines=Shiri"></a> ♰ </h1>
 
 <div float="left" align="center">
     <img src="/assets/kittypaws.gif"/>
