@@ -9,7 +9,7 @@
 <h6 align="left">■ <img src="/assets/coding.png" width="1%">Programer, Artist</h6>
 <h6 align="left">■ <img src="/assets/rose.png" width="1%"> Slvt :3</h6>
 <h6 align="left">■ <img src="/assets/brush.png" width="1%"> Creating *sillest things* on the internet</h6>
-<h6 align="left">■ <img src="/assets/web.png" width="1%"> [My website](https://shlri.github.io/Shlri/)</h6>
+<h6 align="left">■ <img src="/assets/web.png" width="1%"> <a href="https://shlri.github.io/Shlri/" target="_blank">My website</h6>
 
 ---
 
