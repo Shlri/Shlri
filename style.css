@@ -24,7 +24,6 @@ body {
     overflow: hidden;
     height: 100vh;
     image-rendering: pixelated;
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><text y="15" font-size="16">✝</text></svg>'), auto;
 }
 
 /* Background */
