@@ -5,7 +5,7 @@
     <br>
 </div>
 
-<h1 align="center"><img src="https://readme-typing-svg.demolab.com?font=VT323&size=30&pause=1000&color=C084FC&center=true&vCenter=true&width=600&lines=About+me" /></h1>
+<h1 align="left"><img src="https://readme-typing-svg.demolab.com?font=VT323&size=30&pause=1000&color=C084FC&center=true&vCenter=true&width=600&lines=About+me" /></h1>
 <h5 align="left"><img src="/assets/coding.png" width="2%"> Programer, Artist</h5>
 <h5 align="left"><img src="/assets/rose.png" width="2%"> Slvt :3</h5>
 <h5 align="left"><img src="/assets/brush.png" width="2%"> Creating <em>sillest things</em> on the internet</h5>
@@ -13,7 +13,7 @@
 
 ---
 
-### 📫 My Links:
+<h1 align="left"><img src="https://readme-typing-svg.demolab.com?font=VT323&size=30&pause=1000&color=C084FC&center=true&vCenter=true&width=600&lines=Links" /></h1>
 
 [![Twitch](https://img.shields.io/badge/-Twitch-9146FF?style=flat-square&logo=twitch&logoColor=white)](https://www.twitch.tv/MepTBoe_TeJlo)
 [![YouTube](https://img.shields.io/badge/-YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com/@shiri_w)
