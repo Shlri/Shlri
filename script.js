@@ -104,7 +104,7 @@ const container = document.getElementById('windowsContainer');
 const windowElements = {};
 let zIndexCounter = 10;
 
-// Window positions (вручную задай координаты)
+// Window positions
 const positions = {
     profile: { x: 160, y: 80, width: 400, height: 350 },
     links: { x: 550, y: 350, width: 450, height: 400 },
@@ -183,7 +183,7 @@ function toggleWindow(windowId) {
     }
 }
 
-// Dock handlers (оставь как есть)
+// Dock handlers
 document.querySelectorAll('.dock-item').forEach(item => {
     item.addEventListener('click', () => {
         const windowId = item.dataset.window;
@@ -214,3 +214,24 @@ for (let i = 0; i < 8; i++) {
     symbol.style.animationDuration = (15 + Math.random() * 10) + 's';
     symbolsContainer.appendChild(symbol);
 }
+
+// Mouse Trail
+document.addEventListener('mousemove', (e) => {
+    if (Math.random() > 0.95) {
+        const particle = document.createElement('div');
+        particle.style.cssText = `
+            position: fixed;
+            left: ${e.clientX}px;
+            top: ${e.clientY}px;
+            width: 4px;
+            height: 4px;
+            background: var(--neon-purple);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            animation: fadeOut 0.8s ease-out forwards;
+        `;
+        document.body.appendChild(particle);
+        setTimeout(() => particle.remove(), 800);
+    }
+});
