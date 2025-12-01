@@ -5,6 +5,8 @@
     <br>
 </div>
 
+---
+
 <h1 align="left"><img src="https://readme-typing-svg.demolab.com?font=VT323&size=30&pause=1000&color=C084FC&center=true&vCenter=true&width=600&lines=About+me" /></h1>
 <h5 align="left"><img src="/assets/coding.png" width="2%"> Programer, Artist</h5>
 <h5 align="left"><img src="/assets/rose.png" width="2%"> Slvt :3</h5>
