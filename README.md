@@ -5,12 +5,11 @@
     <br>
 </div>
 
-### ✨ **About me:**<br>
 <img src="https://readme-typing-svg.demolab.com?font=VT323&size=30&pause=1000&color=C084FC&center=true&vCenter=true&width=600&lines=About+me" />
-■  <img src="/assets/coding.png" width="4%">Programer, Artist<br>
-■  <img src="/assets/rose.png" width="4%"> Slvt :3<br>
-■  <img src="/assets/brush.png" width="4%"> Creating *sillest things* on the internet<br>
-■  <img src="/assets/web.png" width="4%"> [My website](https://shlri.github.io/Shlri/)<br>
+■  <img src="/assets/coding.png" width="2%">Programer, Artist<br>
+■  <img src="/assets/rose.png" width="2%"> Slvt :3<br>
+■  <img src="/assets/brush.png" width="2%"> Creating *sillest things* on the internet<br>
+■  <img src="/assets/web.png" width="2%"> [My website](https://shlri.github.io/Shlri/)<br>
 
 ---
 
