@@ -11,7 +11,6 @@
 <h5 align="left"><img src="/assets/coding.png" width="2%"> Programer, Artist</h5>
 <h5 align="left"><img src="/assets/rose.png" width="2%"> Slvt :3</h5>
 <h5 align="left"><img src="/assets/brush.png" width="2%"> Creating <em>sillest things</em> on the internet</h5>
-<h5 align="left"><img src="/assets/web.png" width="2%"> <a href="https://shlri.github.io/Shlri/" target="_blank">My website</h5>
 
 ---
 
@@ -22,7 +21,6 @@
 [![Telegram](https://img.shields.io/badge/-Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/shiri_w)
 [![Telegram Channel](https://img.shields.io/badge/-Telegram_Channel-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/shiri_ch)
 [![Steam](https://img.shields.io/badge/-Steam-000000?style=flat-square&logo=steam&logoColor=white)](https://steamcommunity.com/id/__Shiri/)
-[![Website](https://img.shields.io/badge/-Website-000000?style=flat-square&logo=About.me&logoColor=white)](https://shlri.github.io/Shlri/)
 
 ---
 
