@@ -1,4 +1,4 @@
-<h1 align="center"> ♰ Hi! I'm <a href="https://shlri.github.io/Shlri/" target="_blank">S-h-i-r-i</a> ♰ </h1>
+<h1 align="center"> ♰ Hi! I'm <a target="_blank">S-h-i-r-i</a> ♰ </h1>
 
 <div float="left" align="center">
     <img src="/assets/kittypaws.gif"/>
